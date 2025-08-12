@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 LawTech Judiciary Exam Prep - Enroll Now!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    /* Base styles */
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', Arial, sans-serif;
+        line-height: 1.6;
+        color: #333333;
+        background-color: #f5f7fa;
+    }
+
+    /* Responsive layout */
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #ffffff;
+        box-shadow: 0 5px 15px rgba(0, 62, 126, 0.1);
+    }
+
+    /* Header styles */
+    .header {
+        background: linear-gradient(135deg, #003E7E 0%, #0066CC 100%);
+        padding: 25px 20px;
+        text-align: center;
+        border-bottom: 5px solid #FFD700;
+    }
+
+    .logo {
+        max-width: 400px;
+        height: auto;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .tagline {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 15px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+/* Hero Section */
+.hero {
+    padding: 50px 20px;
+    background: #f8f9fa;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e5ec;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-main-text {
+    margin-bottom: 25px;
+}
+
+.hero-underline {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #003E7E;
+    padding-bottom: 8px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.hero-underline:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #FF7A2D, #FFD700);
+    border-radius: 2px;
+}
+
+.hero-subtext {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF7A2D;
+    margin-top: 10px;
+}
+
+.hero-description-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,62,126,0.08);
+    margin-bottom: 30px;
+    border-left: 4px solid #FFD700;
+}
+
+.hero-description-box p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Decorative Elements */
+.hero-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.decoration-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,122,45,0.05);
+    border-radius: 50%;
+    top: -50px;
+    right: -50px;
+}
+
+.decoration-square {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px dashed rgba(0,62,126,0.1);
+    bottom: -30px;
+    left: -30px;
+    transform: rotate(45deg);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #FF7A2D 0%, #FF5E1F 100%);
+    color: white !important;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(255,122,45,0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
+.cta-button i {
+    margin-left: 8px;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,122,45,0.4);
+}
+
+.cta-button:hover i {
+    transform: translateX(3px);
+}
+
+
+
+    /* Benefits section */
+    .benefits-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        /* Increased spacing between cards */
+        margin-top: 30px;
+    }
+
+    .benefits h2 {
+        text-align: center;
+    }
+
+    .benefit-card {
+        width: calc(45% - 30px);
+        /* Reduced card width */
+        min-width: 220px;
+        /* Smaller minimum width */
+        background: white;
+        border-radius: 12px;
+        padding: 20px 15px;
+        /* Reduced padding */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        border-top: 3px solid #FFD700;
+        box-sizing: border-box;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        border-top: 3px solid #FF7A2D;
+    }
+
+    .benefit-icon {
+        width: 50px;
+        /* Slightly smaller icons */
+        height: 50px;
+        margin: 0 auto 12px;
+        /* Adjusted spacing */
+        font-size: 22px;
+        /* Slightly smaller icon size */
+    }
+
+    .benefit-card h3 {
+        font-size: 17px;
+        /* Slightly smaller heading */
+        margin: 0 0 8px;
+    }
+
+    .benefit-card p {
+        font-size: 13px;
+        /* Slightly smaller text */
+        margin: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .benefit-card {
+            width: 100%;
+            max-width: 240px;
+            /* Smaller mobile cards */
+            padding: 18px 12px;
+        }
+    }
+
+    /* Offer section */
+    .offer {
+        background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+        padding: 25px;
+        text-align: center;
+        margin: 30px 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .offer:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+    }
+
+    .offer:after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: -30px;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+    }
+
+    .offer p {
+        color: #003E7E;
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .offer .small {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* CTA button */
+    .cta-container {
+        text-align: center;
+        padding: 0 20px 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: linear-gradient(135deg, #FF7A2D 0%, #FF5E1F 100%);
+        color: #ffffff !important;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        box-shadow: 0 5px 15px rgba(255, 122, 45, 0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(255, 122, 45, 0.6);
+    }
+
+    /* Testimonial */
+    .testimonial {
+        background-color: #003E7E;
+        padding: 30px;
+        margin: 0 20px 30px;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    .testimonial:before {
+        content: "";
+        font-size: 80px;
+        color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        line-height: 1;
+    }
+
+    .testimonial p {
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 16px;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .testimonial .author {
+        font-weight: 600;
+        color: #FFD700;
+        font-style: normal;
+        display: block;
+    }
+
+    .testimonial .role {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+        display: block;
+    }
+
+    /* Footer */
+    .footer {
+        background: linear-gradient(135deg, #002850 0%, #003E7E 100%);
+        padding: 30px 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .footer-logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact-info a {
+        color: #FFD700;
+        text-decoration: none;
+    }
+
+    .social-icons {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    margin: 0 6px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background: #FFD700;
+    color: #003E7E;
+    transform: translateY(-3px);
+}
+
+
+
+    .footer-links {
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 20px;
+    }
+
+    .footer-links a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        margin: 0 8px;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: #FFD700;
+    }
+
+    /* Mobile responsiveness */
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        .hero h1 {
+            font-size: 22px;
+        }
+
+        .hero p {
+            font-size: 14px;
+        }
+
+        .benefit-card {
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .offer p {
+            font-size: 20px;
+        }
+
+        .cta-button {
+            padding: 12px 30px;
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://cdn-ilbpopj.nitrocdn.com/lVoEgeSMENjvaFSOHYkQdDLrjaUjnQZR/assets/images/optimized/rev-c7e1b33/edzorblaw.com/wp-content/uploads/2023/05/legal-rumble-2-logo.png.webp"
+                alt="LawTech Logo" class="logo">
+            <p class="tagline">Your Path to Judiciary Success Starts Here!</p>
+        </div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero-content">
+        <div class="hero-main-text">
+            <span class="hero-underline">From Classroom to Courtroom</span>
+            <span class="hero-subtext">We Prepare You for Success</span>
+        </div>
+        <div class="hero-description-box">
+            <p>Join our comprehensive judiciary exam preparation program designed for ambitious students like you. Learn from experts, practice with mock tests, and get personal guidance to clear your exam confidently.</p>
+        </div>
+        <a href="#cta" class="cta-button">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-decoration">
+        <div class="decoration-circle"></div>
+        <div class="decoration-square"></div>
+    </div>
+</div>
+
+        <!-- Benefits Section -->
+        <!-- Benefits Section -->
+        <div class="benefits">
+            <h2>Why LawTech Stands Out</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍⚖️</div>
+                    <h3>Expert Faculty</h3>
+                    <p>Learn from sitting judges and top legal minds with 15+ years experience</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Track performance with detailed test analysis and improvement plans</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏆</div>
+                    <h3>Proven Results</h3>
+                    <p>1 in 3 students clear judiciary exams in first attempt</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💡</div>
+                    <h3>Current Affairs</h3>
+                    <p>Daily legal updates and landmark judgment analysis</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Comprehensive Material</h3>
+                    <p>Curated study materials with model answers</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Personal Mentorship</h3>
+                    <p>One-on-one guidance from judiciary professionals</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offer -->
+        <div class="offer">
+            <p>🚀 Limited Time Offer! <span class="small">Enroll before August 30th</span></p>
+            <p>GET 20% OFF + FREE Interview Guidance</p>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="cta-container">
+            <a href="#enroll" class="cta-button">Start Your Judiciary Journey Today</a>
+        </div>
+
+        <!-- Testimonial -->
+        <div class="testimonial">
+            <p>"The mock interview sessions at LawTech were exactly like the real exam. My examiner's feedback helped me
+                improve my presentation and legal reasoning skills dramatically."</p>
+            <span class="author">Riya Sharma</span>
+            <span class="role">Civil Judge, Delhi Judiciary Services (2023)</span>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <img src="https://cdn-ilbpopj.nitrocdn.com/lVoEgeSMENjvaFSOHYkQdDLrjaUjnQZR/assets/images/optimized/rev-c7e1b33/edzorblaw.com/wp-content/uploads/2023/05/legal-rumble-2-logo.png.webp"
+                alt="LawTech Logo" class="footer-logo">
+
+            <div class="contact-info">
+                <p>LawTech Education Pvt. Ltd.<br>
+                    24 Legal Heights, New Delhi 110001<br>
+                    <a href="tel:+919876543210">+91 98765 43210</a> |
+                    <a href="mailto:contact@lawtech.in">contact@lawtech.in</a>
+                </p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Our Results</a> |
+                <a href="#">Courses</a> |
+                <a href="#">Faculty</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Unsubscribe</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
